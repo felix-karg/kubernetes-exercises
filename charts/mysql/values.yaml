@@ -1,0 +1,10 @@
+appName: mysql
+appImage: mysql:9
+containerPort: 3306
+name: MYSQL_ROOT_PASSWORD
+value: passw0rd
+volumeName: mysql-persistent-storage
+containerMountPath: /var/lib/mysql
+volumeClaimName: mysql-pv-claim
+
+clusterIP: None
