@@ -8,3 +8,9 @@ containerMountPath: /var/lib/mysql
 volumeClaimName: mysql-pv-claim
 
 clusterIP: None
+
+volumeClaimtype: local
+storageClassName: manual
+storage: 20Gi
+accessMode: ReadWriteOnce
+hostPath: /mnt/data
